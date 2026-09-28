@@ -1,7 +1,17 @@
 .sa-root {
   background: #ffffff;
   color: #111111;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", "Inter Tight", Helvetica, Arial, sans-serif;
+}
+
+.sa-grid12 {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.sa-cell {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .sa-border-b {
@@ -16,13 +26,27 @@
   border-right: 1px solid #111111;
 }
 
-.sa-logo {
-  font-weight: 700;
-  letter-spacing: 0.1em;
+@media (max-width: 767px) {
+  .sa-border-r {
+    border-right: none;
+    border-bottom: 1px solid #111111;
+  }
 }
 
-.sa-link {
-  color: #111111;
+.sa-logo {
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: 0.25em;
+}
+
+.sa-square {
+  width: 10px;
+  height: 10px;
+  background: #cc3333;
+}
+
+.sa-red {
+  color: #cc3333;
 }
 
 .sa-link:hover {
@@ -30,28 +54,84 @@
 }
 
 .sa-index {
-  font-size: 5rem;
+  font-size: clamp(4rem, 8vw, 7rem);
   font-weight: 700;
   color: #cc3333;
-  line-height: 1;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
 }
 
 .sa-index-sm {
-  font-size: 1.5rem;
+  font-size: 3rem;
   font-weight: 700;
   color: #cc3333;
-  width: 2rem;
+  line-height: 1;
+  letter-spacing: -0.03em;
 }
 
-.sa-thumb {
-  width: 64px;
-  height: 64px;
-  background: repeating-linear-gradient(
-    45deg,
-    #111111,
-    #111111 4px,
-    #ffffff 4px,
-    #ffffff 8px
-  );
-  flex-shrink: 0;
+.sa-h1 {
+  font-size: clamp(3.4rem, 6.5vw, 6rem);
+  font-weight: 500;
+  line-height: 0.92;
+  letter-spacing: -0.045em;
+}
+
+.sa-num {
+  font-size: 3.5rem;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.sa-photo {
+  filter: grayscale(1) contrast(1.05);
+  transition: filter 0.5s;
+}
+
+.sa-photo:hover {
+  filter: grayscale(0);
+}
+
+.sa-fade {
+  animation: sa-fade 0.4s ease;
+}
+
+@keyframes sa-fade {
+  from {
+    opacity: 0;
+  }
+}
+
+.sa-toggle {
+  padding: 0.3rem 0.8rem;
+  border: 1px solid #111;
+}
+
+.sa-toggle + .sa-toggle {
+  border-left: none;
+}
+
+.sa-toggle-on {
+  background: #111;
+  color: #fff;
+}
+
+.sa-row {
+  border-bottom: 1px solid #111111;
+  transition:
+    background 0.15s,
+    color 0.15s;
+}
+
+.sa-row:last-child {
+  border-bottom: none;
+}
+
+.sa-row-head {
+  border-bottom: 1px solid #111111;
+}
+
+.sa-row-on {
+  background: #111;
+  color: #fff;
 }

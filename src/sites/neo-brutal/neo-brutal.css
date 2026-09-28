@@ -2,34 +2,89 @@
   background: #f5f3ee;
   color: #111111;
   font-family: "Archivo Black", "Helvetica Neue", Arial, sans-serif;
+  overflow-x: clip;
 }
 
 .nb-root h1,
 .nb-root h2,
 .nb-root h3 {
   font-family: "Archivo Black", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+}
+
+.nb-body {
+  font-family: "Space Grotesk", "Helvetica Neue", sans-serif;
+}
+
+.nb-ticker {
+  background: #111;
+  color: #fff200;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+}
+
+.nb-ticker-track {
+  display: flex;
+  width: max-content;
+  animation: nb-scroll 28s linear infinite;
+}
+
+@keyframes nb-scroll {
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 .nb-border-b {
   border-bottom: 4px solid #111111;
 }
 
+.nb-border-t {
+  border-top: 4px solid #111111;
+}
+
 .nb-border-l {
   border-left: 4px solid #111111;
 }
 
-.nb-logo {
-  font-weight: 900;
-  text-transform: uppercase;
+@media (max-width: 767px) {
+  .nb-border-l {
+    border-left: none;
+    border-top: 4px solid #111111;
+  }
 }
 
-.nb-navlink {
-  position: relative;
+@media (min-width: 768px) {
+  .nb-border-r-md {
+    border-right: 4px solid #111111;
+  }
+}
+
+.nb-border-l-3 {
+  border-left: 3px solid #111111;
+}
+
+.nb-logo {
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+.nb-logo-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  background: #fff200;
+  border: 3px solid #111;
+  box-shadow: 3px 3px 0 #111;
+  font-size: 1.3rem;
 }
 
 .nb-navlink:hover {
   text-decoration: underline;
   text-decoration-thickness: 3px;
+  text-underline-offset: 4px;
 }
 
 .nb-chip {
@@ -37,19 +92,28 @@
   background: #ffffff;
   padding: 0.35rem 0.9rem;
   font-size: 0.75rem;
-  font-weight: 900;
   text-transform: uppercase;
+  box-shadow: 3px 3px 0 #111;
 }
 
 .nb-highlight {
   background: #6ee7b7;
   padding: 0 0.15em;
+  border: 3px solid #111;
+  box-shadow: 4px 4px 0 #111;
+  display: inline-block;
+  transform: rotate(-2deg);
+}
+
+.nb-highlight-y {
+  background: #fff200;
+  padding: 0 0.15em;
+  border: 3px solid #111;
 }
 
 .nb-btn {
   border: 3px solid #111111;
   padding: 0.75rem 1.5rem;
-  font-weight: 900;
   font-size: 0.875rem;
   text-transform: uppercase;
   box-shadow: 5px 5px 0 #111111;
@@ -59,8 +123,8 @@
 }
 
 .nb-btn:hover {
-  transform: translate(2px, 2px);
-  box-shadow: 3px 3px 0 #111111;
+  transform: translate(-2px, -2px);
+  box-shadow: 7px 7px 0 #111111;
 }
 
 .nb-btn:active {
@@ -68,9 +132,14 @@
   box-shadow: 0 0 0 #111111;
 }
 
+.nb-btn-lg {
+  padding: 1rem 1.8rem;
+  font-size: 1rem;
+}
+
 .nb-btn-yellow {
   background: #fff200;
-  color: #111111;
+  color: #111;
 }
 
 .nb-btn-black {
@@ -80,14 +149,100 @@
 
 .nb-btn-white {
   background: #ffffff;
-  color: #111111;
+  color: #111;
 }
 
 .nb-card {
-  border: 3px solid #111111;
-  box-shadow: 6px 6px 0 #111111;
+  border: 4px solid #111111;
+  box-shadow: 8px 8px 0 #111111;
 }
 
-.nb-bar {
-  border: 3px solid #111111;
+.nb-card-hover {
+  transition:
+    transform 0.15s,
+    box-shadow 0.15s;
+}
+
+.nb-card-hover:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 11px 11px 0 #111111;
+}
+
+.nb-dots {
+  background-image: radial-gradient(#111 1.5px, transparent 1.5px);
+  background-size: 18px 18px;
+  opacity: 0.18;
+}
+
+.nb-sticker {
+  border: 3px solid #111;
+  padding: 0.35rem 0.8rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  box-shadow: 4px 4px 0 #111;
+}
+
+.nb-avatar {
+  border: 3px solid #111;
+}
+
+.nb-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 3px solid #111;
+  background: #fff;
+  font-size: 1rem;
+}
+
+.nb-before {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.15);
+}
+
+.nb-toggle {
+  border: 3px solid #111;
+  box-shadow: 4px 4px 0 #111;
+  background: #fff;
+}
+
+.nb-toggle button {
+  padding: 0.6rem 1rem;
+  font-size: 0.8rem;
+}
+
+.nb-toggle button + button {
+  border-left: 3px solid #111;
+}
+
+.nb-toggle-on {
+  background: #111;
+  color: #fff200;
+}
+
+.nb-tick {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border: 2.5px solid #111;
+  background: #fff;
+  font-size: 0.7rem;
+}
+
+.nb-plus {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border: 3px solid #111;
+  background: #fff200;
+  box-shadow: 3px 3px 0 #111;
 }

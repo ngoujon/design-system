@@ -1,25 +1,25 @@
-import type { ComponentType } from "react";
+import { lazy, type ComponentType } from "react";
 
-import AtelierCreamSite from "../sites/atelier-cream/AtelierCreamSite";
-import AuroraGlassSite from "../sites/aurora-glass/AuroraGlassSite";
-import BlobPopSite from "../sites/blob-pop/BlobPopSite";
-import ClaySoftSite from "../sites/clay-soft/ClaySoftSite";
-import CraftPaperSite from "../sites/craft-paper/CraftPaperSite";
-import EstateMonoSite from "../sites/estate-mono/EstateMonoSite";
-import FluentCorpSite from "../sites/fluent-corp/FluentCorpSite";
-import GridMetricsSite from "../sites/grid-metrics/GridMetricsSite";
-import HudCyberSite from "../sites/hud-cyber/HudCyberSite";
-import NeoBrutalSite from "../sites/neo-brutal/NeoBrutalSite";
-import NeonTideSite from "../sites/neon-tide/NeonTideSite";
-import NoirCoutureSite from "../sites/noir-couture/NoirCoutureSite";
-import QuietEditorialSite from "../sites/quiet-editorial/QuietEditorialSite";
-import StreetBlockSite from "../sites/street-block/StreetBlockSite";
-import SwissAxisSite from "../sites/swiss-axis/SwissAxisSite";
-import TerminalHackSite from "../sites/terminal-hack/TerminalHackSite";
-import TerraBioticSite from "../sites/terra-biotic/TerraBioticSite";
-import VaultCryptoSite from "../sites/vault-crypto/VaultCryptoSite";
-import WaveCastSite from "../sites/wave-cast/WaveCastSite";
-import ZineRiotSite from "../sites/zine-riot/ZineRiotSite";
+const AtelierCreamSite = lazy(() => import("../sites/atelier-cream/AtelierCreamSite"));
+const AuroraGlassSite = lazy(() => import("../sites/aurora-glass/AuroraGlassSite"));
+const BlobPopSite = lazy(() => import("../sites/blob-pop/BlobPopSite"));
+const ClaySoftSite = lazy(() => import("../sites/clay-soft/ClaySoftSite"));
+const CraftPaperSite = lazy(() => import("../sites/craft-paper/CraftPaperSite"));
+const EstateMonoSite = lazy(() => import("../sites/estate-mono/EstateMonoSite"));
+const FluentCorpSite = lazy(() => import("../sites/fluent-corp/FluentCorpSite"));
+const GridMetricsSite = lazy(() => import("../sites/grid-metrics/GridMetricsSite"));
+const HudCyberSite = lazy(() => import("../sites/hud-cyber/HudCyberSite"));
+const NeoBrutalSite = lazy(() => import("../sites/neo-brutal/NeoBrutalSite"));
+const NeonTideSite = lazy(() => import("../sites/neon-tide/NeonTideSite"));
+const NoirCoutureSite = lazy(() => import("../sites/noir-couture/NoirCoutureSite"));
+const QuietEditorialSite = lazy(() => import("../sites/quiet-editorial/QuietEditorialSite"));
+const StreetBlockSite = lazy(() => import("../sites/street-block/StreetBlockSite"));
+const SwissAxisSite = lazy(() => import("../sites/swiss-axis/SwissAxisSite"));
+const TerminalHackSite = lazy(() => import("../sites/terminal-hack/TerminalHackSite"));
+const TerraBioticSite = lazy(() => import("../sites/terra-biotic/TerraBioticSite"));
+const VaultCryptoSite = lazy(() => import("../sites/vault-crypto/VaultCryptoSite"));
+const WaveCastSite = lazy(() => import("../sites/wave-cast/WaveCastSite"));
+const ZineRiotSite = lazy(() => import("../sites/zine-riot/ZineRiotSite"));
 
 export interface DesignSystem {
   id: string;

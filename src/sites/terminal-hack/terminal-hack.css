@@ -1,15 +1,42 @@
 .th-root {
+  position: relative;
   background: #0a0e0a;
   color: #c9f7c9;
   font-family: "JetBrains Mono", "Fira Code", ui-monospace, monospace;
+  overflow-x: clip;
+}
+
+.th-crt {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 60;
+  background:
+    repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.18) 0 1px, transparent 1px 3px),
+    radial-gradient(ellipse at center, transparent 60%, rgba(0, 0, 0, 0.35));
+}
+
+.th-banner {
+  background: rgba(74, 222, 128, 0.07);
+  color: #c9f7c9;
+}
+
+.th-header {
+  background: rgba(10, 14, 10, 0.92);
+  backdrop-filter: blur(6px);
 }
 
 .th-border-b {
-  border-bottom: 1px solid rgba(201, 247, 201, 0.15);
+  border-bottom: 1px solid rgba(74, 222, 128, 0.2);
 }
 
 .th-border-t {
-  border-top: 1px solid rgba(201, 247, 201, 0.15);
+  border-top: 1px solid rgba(74, 222, 128, 0.2);
+}
+
+.th-border-y {
+  border-top: 1px solid rgba(74, 222, 128, 0.2);
+  border-bottom: 1px solid rgba(74, 222, 128, 0.2);
 }
 
 .th-logo {
@@ -29,72 +56,201 @@
   color: rgba(201, 247, 201, 0.45);
 }
 
+.th-accent {
+  color: #4ade80;
+  text-shadow: 0 0 10px rgba(74, 222, 128, 0.45);
+}
+
+.th-ok {
+  color: #4ade80;
+}
+
+.th-link-c,
+.th-link {
+  text-decoration: none;
+}
+
+.th-cyan {
+  color: #67e8f9;
+}
+
+.th-yellow {
+  color: #fde68a;
+}
+
+.th-red {
+  color: #fca5a5;
+}
+
+.th-caret {
+  color: #4ade80;
+  animation: th-blink 1s steps(1) infinite;
+}
+
+@keyframes th-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.th-ascii {
+  color: #4ade80;
+  text-shadow: 0 0 12px rgba(74, 222, 128, 0.55);
+  white-space: pre;
+}
+
 .th-tag {
   border: 1px solid rgba(74, 222, 128, 0.4);
   color: #4ade80;
+  padding: 0.15rem 0.55rem;
   font-size: 0.75rem;
-  padding: 0.2rem 0.6rem;
-  border-radius: 4px;
+}
+
+.th-tag-inline {
+  color: #fde68a;
+}
+
+.th-btn {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(74, 222, 128, 0.5);
+  color: #4ade80;
+  padding: 0.45rem 0.95rem;
+  font-size: 0.8rem;
+  transition:
+    background 0.15s,
+    color 0.15s;
+}
+
+.th-btn:hover {
+  background: rgba(74, 222, 128, 0.1);
+}
+
+.th-btn-solid {
+  background: #4ade80;
+  color: #0a0e0a;
+  border-color: #4ade80;
+  font-weight: 700;
+}
+
+.th-btn-solid:hover {
+  background: #86efac;
+}
+
+.th-install {
+  border: 1px solid rgba(74, 222, 128, 0.3);
+  background: rgba(74, 222, 128, 0.03);
+}
+
+.th-tab {
+  padding: 0.45rem 0.9rem;
+  color: rgba(201, 247, 201, 0.45);
+  border-right: 1px solid rgba(74, 222, 128, 0.2);
+}
+
+.th-tab-on {
+  color: #0a0e0a;
+  background: #4ade80;
+}
+
+.th-copy {
+  font-size: 0.72rem;
+  color: rgba(201, 247, 201, 0.6);
+  border: 1px solid rgba(74, 222, 128, 0.3);
+  padding: 0.15rem 0.5rem;
+}
+
+.th-copy:hover {
+  color: #4ade80;
+}
+
+.th-window {
+  border: 1px solid rgba(74, 222, 128, 0.3);
+  background: #060906;
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.6),
+    0 30px 60px -20px rgba(74, 222, 128, 0.18);
+}
+
+.th-window-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.6rem 0.9rem;
+  border-bottom: 1px solid rgba(74, 222, 128, 0.2);
+  background: rgba(74, 222, 128, 0.05);
+}
+
+.th-dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 999px;
 }
 
 .th-prompt {
   color: #4ade80;
 }
 
-.th-cursor::after {
-  content: "";
+.th-line {
+  opacity: 0;
+  animation: th-appear 0.01s forwards;
+  white-space: pre-wrap;
 }
 
-.th-btn {
-  border: 1px solid rgba(74, 222, 128, 0.4);
-  color: #c9f7c9;
-  padding: 0.5rem 1rem;
-  font-size: 0.8rem;
-  border-radius: 4px;
-  transition: all 0.15s ease;
+@keyframes th-appear {
+  to {
+    opacity: 1;
+  }
 }
 
-.th-btn:hover {
-  border-color: #4ade80;
-  color: #4ade80;
-}
-
-.th-btn-solid {
-  background: #4ade80;
-  color: #0a0e0a;
-  font-weight: 700;
-  border-color: #4ade80;
-}
-
-.th-btn-solid:hover {
-  background: #86efac;
-  color: #0a0e0a;
-}
-
-.th-window {
-  border: 1px solid rgba(74, 222, 128, 0.25);
-  border-radius: 8px;
-  overflow: hidden;
-  background: #060906;
-  box-shadow: 0 0 40px rgba(74, 222, 128, 0.08);
-}
-
-.th-window-bar {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  padding: 0.6rem 0.9rem;
-  border-bottom: 1px solid rgba(74, 222, 128, 0.15);
-}
-
-.th-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 999px;
+.th-link.th-line,
+.th-line.th-link {
+  color: #67e8f9;
+  text-decoration: underline;
 }
 
 .th-card {
-  border: 1px solid rgba(201, 247, 201, 0.15);
-  border-radius: 8px;
+  background: #0a0e0a;
+  transition: background 0.2s;
+}
+
+.th-card:hover {
+  background: #0d140d;
+}
+
+.th-card-b {
+  border: 1px solid rgba(74, 222, 128, 0.2);
   background: rgba(74, 222, 128, 0.03);
+}
+
+.th-log {
+  border-left: 2px solid transparent;
+}
+
+.th-log:hover {
+  background: rgba(74, 222, 128, 0.06);
+  border-left-color: #4ade80;
+}
+
+.th-avatar {
+  filter: grayscale(1) sepia(1) hue-rotate(70deg) saturate(2.2) brightness(0.8) contrast(1.2);
+  border: 1px solid rgba(74, 222, 128, 0.4);
+  image-rendering: pixelated;
+}
+
+.th-table {
+  border: 1px solid rgba(74, 222, 128, 0.25);
+}
+
+.th-table thead tr {
+  border-bottom: 1px dashed rgba(74, 222, 128, 0.35);
+  background: rgba(74, 222, 128, 0.05);
+}
+
+.th-table tbody tr + tr {
+  border-top: 1px dashed rgba(74, 222, 128, 0.15);
+}
+
+.th-cta-shade {
+  background: linear-gradient(180deg, #0a0e0a, rgba(10, 14, 10, 0.6) 50%, #0a0e0a);
 }

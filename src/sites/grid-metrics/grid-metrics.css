@@ -1,45 +1,168 @@
 .gm-root {
   background: #0b0e14;
-  color: #e6e9ef;
+  color: #e5e7eb;
   font-family: "Inter", system-ui, sans-serif;
+  font-feature-settings: "tnum";
+}
+
+.gm-root .font-mono {
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+}
+
+.gm-side {
+  display: flex;
+  flex-direction: column;
+  background: #0d1118;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.gm-top {
+  background: rgba(11, 14, 20, 0.9);
+  backdrop-filter: blur(8px);
 }
 
 .gm-border-b {
-  border-bottom: 1px solid rgba(230, 233, 239, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .gm-border-t {
-  border-top: 1px solid rgba(230, 233, 239, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .gm-logo {
   font-weight: 700;
-  font-family: ui-monospace, monospace;
+  letter-spacing: -0.02em;
 }
 
-.gm-link {
-  color: rgba(230, 233, 239, 0.55);
+.gm-logo-mark {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  box-shadow: inset 0 0 0 4px #0b0e14;
+  outline: 1px solid #3b82f6;
 }
 
-.gm-link:hover {
-  color: #ffffff;
+.gm-th {
+  font-size: 0.64rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.gm-select {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  background: #0f131b;
+}
+
+.gm-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.45rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.84rem;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.gm-nav:hover {
+  background: rgba(255, 255, 255, 0.04);
+  color: #fff;
+}
+
+.gm-nav-active {
+  background: rgba(59, 130, 246, 0.12);
+  color: #fff;
+  box-shadow: inset 2px 0 0 #3b82f6;
+}
+
+.gm-count {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.65rem;
+  background: rgba(248, 113, 113, 0.18);
+  color: #f87171;
+  border-radius: 999px;
+  padding: 0 0.4rem;
+}
+
+.gm-search {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  background: #0f131b;
+  max-width: 460px;
+}
+
+.gm-kbd {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.65rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 4px;
+  padding: 0 0.3rem;
+}
+
+.gm-live {
+  color: #4ade80;
+}
+
+.gm-live-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: #4ade80;
+  box-shadow: 0 0 8px #4ade80;
+  animation: gm-blink 1.6s infinite;
+}
+
+@keyframes gm-blink {
+  50% {
+    opacity: 0.35;
+  }
 }
 
 .gm-btn {
   background: #3b82f6;
-  color: #ffffff;
+  color: #fff;
   font-size: 0.8rem;
   font-weight: 600;
-  padding: 0.5rem 1rem;
+  padding: 0.4rem 0.85rem;
   border-radius: 6px;
 }
 
 .gm-btn:hover {
-  background: #60a5fa;
+  background: #2563eb;
+}
+
+.gm-btn-ghost {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  padding: 0.3rem 0.65rem;
+}
+
+.gm-ticker {
+  background: #0d1118;
+}
+
+.gm-ticker-track {
+  animation: gm-tick 40s linear infinite;
+}
+
+@keyframes gm-tick {
+  to {
+    transform: translateX(-33.33%);
+  }
 }
 
 .gm-bg-grid {
-  background: rgba(230, 233, 239, 0.08);
+  background: rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .gm-panel {
@@ -56,25 +179,141 @@
 
 .gm-bar {
   background: linear-gradient(180deg, #3b82f6, #1d4ed8);
-  border-radius: 2px 2px 0 0;
 }
 
-.gm-row-border {
-  border-top: 1px solid rgba(230, 233, 239, 0.06);
+.gm-seg {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  overflow: hidden;
 }
 
-.gm-badge {
+.gm-seg button {
+  font-family: "JetBrains Mono", monospace;
   font-size: 0.7rem;
-  padding: 0.15rem 0.5rem;
+  padding: 0.25rem 0.6rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.gm-seg button + button {
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.gm-seg-active {
+  background: rgba(59, 130, 246, 0.18);
+  color: #fff !important;
+}
+
+.gm-tooltip {
+  background: #151a24;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 6px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.gm-table thead tr {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: #0d1118;
+}
+
+.gm-table tbody tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.gm-table tbody tr:hover {
+  background: rgba(59, 130, 246, 0.05);
+}
+
+.gm-pill {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 500;
+  border-radius: 999px;
+  padding: 0.1rem 0.55rem;
+  border: 1px solid transparent;
+}
+
+.gm-pill-green {
+  color: #4ade80;
+  background: rgba(74, 222, 128, 0.08);
+  border-color: rgba(74, 222, 128, 0.2);
+}
+
+.gm-pill-blue {
+  color: #60a5fa;
+  background: rgba(59, 130, 246, 0.08);
+  border-color: rgba(59, 130, 246, 0.25);
+}
+
+.gm-pill-amber {
+  color: #fbbf24;
+  background: rgba(251, 191, 36, 0.08);
+  border-color: rgba(251, 191, 36, 0.2);
+}
+
+.gm-pill-red {
+  color: #f87171;
+  background: rgba(248, 113, 113, 0.08);
+  border-color: rgba(248, 113, 113, 0.2);
+}
+
+.gm-pill-gray {
+  color: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.gm-filter {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+}
+
+.gm-filter:hover {
+  color: #fff;
+}
+
+.gm-filter-active {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.gm-page {
+  min-width: 22px;
+  text-align: center;
+  padding: 0.1rem 0.3rem;
+  border-radius: 4px;
+}
+
+.gm-page-active {
+  background: rgba(59, 130, 246, 0.2);
+  color: #fff;
+}
+
+.gm-alert + .gm-alert {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.gm-alert-dot {
+  margin-top: 6px;
+  width: 7px;
+  height: 7px;
+  flex-shrink: 0;
   border-radius: 999px;
 }
 
-.gm-badge-ok {
-  background: rgba(74, 222, 128, 0.15);
-  color: #4ade80;
+.gm-alert-red {
+  background: #f87171;
+  box-shadow: 0 0 8px #f87171;
 }
 
-.gm-badge-pending {
-  background: rgba(250, 204, 21, 0.15);
-  color: #facc15;
+.gm-alert-amber {
+  background: #fbbf24;
+}
+
+.gm-alert-green {
+  background: #4ade80;
 }

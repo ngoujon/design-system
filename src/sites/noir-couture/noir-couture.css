@@ -1,54 +1,74 @@
 .nc-root {
+  position: relative;
   background: #0d0d0d;
   color: #f2ede6;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-}
-
-.nc-logo {
-  font-family: "Georgia", serif;
-  font-size: 1.5rem;
-  letter-spacing: 0.05em;
+  font-family: "Inter", "Helvetica Neue", sans-serif;
+  font-weight: 300;
 }
 
 .nc-serif {
-  font-family: "Georgia", "Playfair Display", serif;
+  font-family: "Playfair Display", Georgia, serif;
   font-weight: 400;
   letter-spacing: -0.01em;
 }
 
-.nc-link {
-  color: rgba(242, 237, 230, 0.65);
-  text-decoration: none;
+.nc-italic {
+  font-family: "Cormorant Garamond", "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 400;
 }
 
-.nc-link:hover {
+.nc-gold {
   color: #d4af37;
 }
 
-.nc-icon-btn {
-  color: rgba(242, 237, 230, 0.8);
+.nc-announce {
+  background: #d4af37;
+  color: #0d0d0d;
+  font-weight: 500;
+}
+
+.nc-header {
+  background: rgba(13, 13, 13, 0.88);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.18);
+}
+
+.nc-logo {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 2rem;
+  letter-spacing: 0.35em;
+  font-weight: 500;
+}
+
+.nc-link {
+  color: #cfc8bd;
+  transition: color 0.3s;
+}
+
+.nc-link:hover,
+.nc-link-active {
+  color: #d4af37;
 }
 
 .nc-eyebrow {
-  font-size: 0.7rem;
-  letter-spacing: 0.25em;
+  font-size: 0.66rem;
   text-transform: uppercase;
+  letter-spacing: 0.35em;
   color: #d4af37;
-}
-
-.nc-hero {
-  background: radial-gradient(60% 60% at 50% 30%, rgba(212, 175, 55, 0.08), transparent 70%);
-  border-bottom: 1px solid rgba(242, 237, 230, 0.08);
 }
 
 .nc-btn {
   border: 1px solid #d4af37;
   color: #d4af37;
-  padding: 0.85rem 2rem;
-  font-size: 0.75rem;
+  padding: 0.95rem 2.2rem;
+  font-size: 0.66rem;
   text-transform: uppercase;
-  letter-spacing: 0.15em;
-  transition: all 0.2s ease;
+  letter-spacing: 0.3em;
+  transition:
+    background 0.4s,
+    color 0.4s;
 }
 
 .nc-btn:hover {
@@ -56,23 +76,139 @@
   color: #0d0d0d;
 }
 
-.nc-product-frame {
-  aspect-ratio: 3 / 4;
-  background: linear-gradient(160deg, #1c1c1c, #0d0d0d);
-  border: 1px solid rgba(242, 237, 230, 0.1);
-  transition: border-color 0.2s ease;
+.nc-btn-ghost {
+  border-color: rgba(242, 237, 230, 0.5);
+  color: #f2ede6;
 }
 
-.group:hover .nc-product-frame {
+.nc-btn-ghost:hover {
+  background: #f2ede6;
+}
+
+.nc-editorial {
+  filter: grayscale(1) contrast(1.15) brightness(0.8);
+}
+
+.nc-zoom {
+  animation: nc-zoom 20s ease-out forwards;
+}
+
+@keyframes nc-zoom {
+  from {
+    transform: scale(1.1);
+  }
+}
+
+.nc-hero-shade {
+  background: linear-gradient(180deg, rgba(13, 13, 13, 0.2) 40%, rgba(13, 13, 13, 0.9));
+}
+
+.nc-rule {
+  width: 1px;
+  height: 64px;
+  background: linear-gradient(180deg, transparent, #d4af37);
+}
+
+.nc-frame {
+  background: #141414;
+}
+
+.nc-product-img {
+  filter: grayscale(0.85) contrast(1.1) brightness(0.9);
+  transition: opacity 0.8s;
+}
+
+.nc-product-alt {
+  opacity: 0;
+  filter: grayscale(0.85) contrast(1.1) brightness(0.9);
+  transition:
+    opacity 0.8s,
+    transform 1.6s;
+}
+
+.nc-product:hover .nc-product-alt {
+  opacity: 1;
+  transform: scale(1.04);
+}
+
+.nc-tag {
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: #d4af37;
+  border: 1px solid rgba(212, 175, 55, 0.6);
+  padding: 0.35rem 0.7rem;
+  background: rgba(13, 13, 13, 0.6);
+}
+
+.nc-quick {
+  padding: 0.85rem;
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  background: rgba(13, 13, 13, 0.9);
+  color: #f2ede6;
+  border: 1px solid rgba(212, 175, 55, 0.5);
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.4s;
+}
+
+.nc-product:hover .nc-quick {
+  opacity: 1;
+  transform: none;
+}
+
+.nc-quick:hover {
+  background: #d4af37;
+  color: #0d0d0d;
+}
+
+.nc-campaign-shade {
+  background: linear-gradient(90deg, rgba(13, 13, 13, 0.92) 25%, rgba(13, 13, 13, 0.2));
+}
+
+.nc-jewel {
+  background: #080808;
+  outline: 1px solid rgba(212, 175, 55, 0.15);
+  outline-offset: 12px;
+}
+
+.nc-jewel-img {
+  filter: saturate(0.7) contrast(1.1) brightness(0.85) sepia(0.15);
+}
+
+.nc-border-y {
+  border-top: 1px solid rgba(212, 175, 55, 0.18);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.18);
+}
+
+.nc-divide > * {
+  border-top: 1px solid rgba(242, 237, 230, 0.1);
+}
+
+.nc-divide > *:last-child {
+  border-bottom: 1px solid rgba(242, 237, 230, 0.1);
+}
+
+.nc-row {
+  transition: padding 0.5s;
+}
+
+.nc-row:hover {
+  padding-left: 1rem;
+}
+
+.nc-input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(242, 237, 230, 0.3);
+  padding: 0.8rem 0;
+  font-size: 0.9rem;
+  color: #f2ede6;
+  outline: none;
+}
+
+.nc-input:focus {
   border-color: #d4af37;
-}
-
-.nc-price {
-  color: rgba(242, 237, 230, 0.5);
-}
-
-.nc-band {
-  background: #111111;
-  border-top: 1px solid rgba(242, 237, 230, 0.08);
-  border-bottom: 1px solid rgba(242, 237, 230, 0.08);
 }

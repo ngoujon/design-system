@@ -1,71 +1,427 @@
 .cs-root {
-  background: linear-gradient(180deg, #fbeff5 0%, #eef1fb 100%);
-  font-family: "Nunito", "Inter", system-ui, sans-serif;
+  background: linear-gradient(160deg, #fbeff5 0%, #f3eefb 45%, #eef1fb 100%);
+  color: #3d3145;
+  font-family: "Nunito", system-ui, sans-serif;
+  overflow-x: clip;
 }
 
 .cs-logo {
-  font-weight: 800;
-  font-size: 1.3rem;
+  font-weight: 900;
+  font-size: 1.6rem;
   color: #3d3145;
+}
+
+.cs-logo-blob {
+  width: 34px;
+  height: 34px;
+  border-radius: 42% 58% 65% 35% / 45% 45% 55% 55%;
+  background: linear-gradient(145deg, #ffc6de, #c9b8ff);
+  box-shadow:
+    inset 3px 3px 6px rgba(255, 255, 255, 0.8),
+    inset -3px -4px 6px rgba(120, 80, 160, 0.25),
+    0 6px 12px rgba(180, 130, 200, 0.35);
+}
+
+.cs-nav {
+  background: rgba(255, 255, 255, 0.55);
+  box-shadow:
+    inset 2px 2px 4px rgba(255, 255, 255, 0.9),
+    0 8px 20px rgba(180, 150, 210, 0.2);
+}
+
+.cs-nav-active {
+  background: #fff;
+  color: #3d3145;
+  box-shadow: 0 4px 10px rgba(180, 150, 210, 0.3);
 }
 
 .cs-link {
   color: #6b5b73;
+  transition: color 0.2s;
 }
 
 .cs-link:hover {
   color: #3d3145;
 }
 
-.cs-btn {
-  border-radius: 999px;
-  padding: 0.65rem 1.4rem;
-  font-size: 0.875rem;
+.cs-soft-text {
+  background: linear-gradient(90deg, #e27bb0, #9b87f5);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.cs-eyebrow {
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #b08ac0;
+}
+
+.cs-chip {
+  font-size: 0.85rem;
   font-weight: 700;
-  transition: transform 0.15s ease;
+  color: #6b5b73;
+  background: #fff;
+  border-radius: 999px;
+  padding: 0.45rem 1rem;
+  box-shadow:
+    inset 2px 2px 4px rgba(255, 255, 255, 1),
+    0 6px 14px rgba(200, 160, 210, 0.3);
+}
+
+.cs-chip-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: #7ed6a8;
+}
+
+.cs-btn {
+  font-weight: 800;
+  font-size: 0.95rem;
+  border-radius: 999px;
+  padding: 0.85rem 1.6rem;
+  background: #ffffff;
+  color: #3d3145;
+  box-shadow:
+    inset 2px 2px 5px rgba(255, 255, 255, 1),
+    inset -3px -3px 6px rgba(200, 170, 220, 0.35),
+    0 10px 20px rgba(180, 150, 210, 0.3);
+  transition: transform 0.2s;
 }
 
 .cs-btn:hover {
   transform: translateY(-2px);
 }
 
+.cs-btn-primary {
+  background: linear-gradient(145deg, #ff9fc8, #b79cff);
+  color: #fff;
+  box-shadow:
+    inset 3px 3px 6px rgba(255, 255, 255, 0.45),
+    inset -4px -4px 8px rgba(110, 60, 160, 0.25),
+    0 12px 24px rgba(200, 120, 200, 0.45);
+}
+
 .cs-btn-dark {
   background: #3d3145;
   color: #fff;
-  box-shadow: 0 6px 16px rgba(61, 49, 69, 0.25);
-}
-
-.cs-btn-primary {
-  background: #ffb4c6;
-  color: #3d3145;
-  box-shadow: 0 8px 20px rgba(255, 180, 198, 0.6);
-}
-
-.cs-btn-ghost {
-  background: #ffffff;
-  color: #3d3145;
-  box-shadow: 0 6px 16px rgba(61, 49, 69, 0.08);
-}
-
-.cs-blob-frame {
-  background: linear-gradient(135deg, #ffd6e6, #d6e0ff);
-  border-radius: 42% 58% 65% 35% / 45% 45% 55% 55%;
   box-shadow:
-    inset 0 8px 24px rgba(255, 255, 255, 0.6),
-    0 20px 50px rgba(150, 130, 200, 0.25);
+    inset 2px 2px 5px rgba(255, 255, 255, 0.15),
+    0 10px 20px rgba(61, 49, 69, 0.3);
+}
+
+.cs-play {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  color: #fff;
+  background: linear-gradient(145deg, #ff9fc8, #b79cff);
+  box-shadow:
+    inset 2px 2px 4px rgba(255, 255, 255, 0.5),
+    0 6px 12px rgba(200, 120, 200, 0.4);
+}
+
+.cs-play-lg {
+  width: 56px;
+  height: 56px;
+  font-size: 1rem;
+  flex-shrink: 0;
 }
 
 .cs-card {
   background: #ffffff;
+  border-radius: 32px;
+  box-shadow:
+    inset 3px 3px 8px rgba(255, 255, 255, 0.9),
+    inset -4px -5px 10px rgba(190, 160, 215, 0.25),
+    0 18px 36px -10px rgba(170, 140, 200, 0.35);
+}
+
+.cs-panel {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 48px;
+  box-shadow:
+    inset 4px 4px 10px rgba(255, 255, 255, 0.95),
+    inset -6px -6px 14px rgba(190, 160, 215, 0.2),
+    0 24px 50px -15px rgba(170, 140, 200, 0.35);
+}
+
+.cs-session {
+  transition: transform 0.3s;
+}
+
+.cs-session:hover {
+  transform: translateY(-6px) rotate(-0.5deg);
+}
+
+.cs-breath-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 360px;
+  height: 360px;
+}
+
+.cs-breath-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 42% 58% 65% 35% / 45% 45% 55% 55%;
+  background: rgba(255, 255, 255, 0.4);
+  animation: cs-morph 12s ease-in-out infinite;
+}
+
+.cs-breath {
+  position: relative;
+  width: 240px;
+  height: 240px;
+  border-radius: 42% 58% 65% 35% / 45% 45% 55% 55%;
+  background: linear-gradient(145deg, #ffc6de, #c9b8ff 70%, #b5d8ff);
+  box-shadow:
+    inset 12px 12px 24px rgba(255, 255, 255, 0.65),
+    inset -14px -16px 26px rgba(120, 80, 170, 0.3),
+    0 30px 60px rgba(170, 120, 210, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation:
+    cs-breathe 8s ease-in-out infinite,
+    cs-morph 12s ease-in-out infinite;
+}
+
+.cs-breath span {
+  position: absolute;
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(120, 80, 170, 0.4);
+}
+
+.cs-breath-in {
+  animation: cs-in 8s infinite;
+}
+
+.cs-breath-out {
+  animation: cs-out 8s infinite;
+}
+
+@keyframes cs-breathe {
+  0%,
+  100% {
+    transform: scale(0.82);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+}
+
+@keyframes cs-in {
+  0%,
+  45% {
+    opacity: 1;
+  }
+  50%,
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes cs-out {
+  0%,
+  45% {
+    opacity: 0;
+  }
+  50%,
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes cs-morph {
+  50% {
+    border-radius: 58% 42% 38% 62% / 55% 60% 40% 45%;
+  }
+}
+
+.cs-float {
+  animation: cs-float 6s ease-in-out infinite;
+}
+
+.cs-float-2 {
+  animation: cs-float 7s ease-in-out infinite reverse;
+}
+
+@keyframes cs-float {
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.cs-sleep-bar {
+  border-radius: 6px;
+  background: linear-gradient(180deg, #c9b8ff, #ffc6de);
+}
+
+.cs-blob-img {
+  border-radius: 42% 58% 65% 35% / 45% 45% 55% 55%;
+}
+
+.cs-mood {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 118px;
+  height: 118px;
+  border-radius: 42% 58% 55% 45% / 50% 45% 55% 50%;
+  box-shadow:
+    inset 4px 4px 8px rgba(255, 255, 255, 0.8),
+    inset -5px -6px 10px rgba(120, 80, 160, 0.15),
+    0 12px 22px rgba(170, 140, 200, 0.3);
+  transition: transform 0.25s;
+}
+
+.cs-mood:hover {
+  transform: translateY(-4px);
+}
+
+.cs-mood-active {
+  transform: scale(1.1);
+  outline: 4px solid #fff;
+}
+
+.cs-reco {
+  border-radius: 999px;
+  box-shadow:
+    inset 3px 3px 6px rgba(255, 255, 255, 0.8),
+    0 14px 26px rgba(170, 140, 200, 0.3);
+  transition: background 0.4s;
+}
+
+.cs-tab {
+  font-weight: 800;
+  font-size: 0.9rem;
+  color: #6b5b73;
+  padding: 0.5rem 1.1rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+.cs-tab-active {
+  background: #3d3145;
+  color: #fff;
+}
+
+.cs-icon-blob {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 58px;
+  height: 58px;
+  border-radius: 42% 58% 55% 45% / 50% 45% 55% 50%;
+  box-shadow:
+    inset 3px 3px 6px rgba(255, 255, 255, 0.8),
+    inset -3px -4px 6px rgba(120, 80, 160, 0.15);
+}
+
+.cs-track {
+  border-radius: 999px;
+  background: #f3edf7;
+  box-shadow: inset 2px 2px 4px rgba(170, 140, 200, 0.25);
+  overflow: hidden;
+}
+
+.cs-fill {
+  border-radius: 999px;
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.7);
+  filter: saturate(1.6) brightness(0.95);
+}
+
+.cs-portrait {
+  width: 220px;
+  height: 220px;
+  padding: 10px;
+  border-radius: 42% 58% 65% 35% / 45% 45% 55% 55%;
+  box-shadow:
+    inset 4px 4px 8px rgba(255, 255, 255, 0.8),
+    0 20px 40px rgba(170, 140, 200, 0.35);
+  overflow: hidden;
+}
+
+.cs-portrait img {
+  border-radius: 42% 58% 65% 35% / 45% 45% 55% 55%;
+}
+
+.cs-check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 999px;
+  background: #c8f0de;
+  color: #2f7a57;
+  font-size: 0.8rem;
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.8);
+}
+
+.cs-plan {
   border-radius: 28px;
-  box-shadow: 0 10px 30px rgba(150, 130, 200, 0.15);
+  background: #fff;
+  box-shadow:
+    inset 2px 2px 4px rgba(255, 255, 255, 1),
+    0 8px 18px rgba(170, 140, 200, 0.2);
+  border: 3px solid transparent;
 }
 
-.cs-card-accent {
-  background: linear-gradient(135deg, #fff5f8, #f2f0ff);
+.cs-plan-active {
+  border-color: #d6c4ff;
 }
 
-.cs-icon {
-  background: linear-gradient(135deg, #ffe1ea, #e3e6ff);
-  border-radius: 40% 60% 55% 45% / 50% 40% 60% 50%;
+.cs-cta {
+  border-radius: 56px;
+  background: linear-gradient(145deg, #ffd6e8, #d9d6ff);
+  box-shadow:
+    inset 6px 6px 14px rgba(255, 255, 255, 0.7),
+    inset -8px -8px 16px rgba(120, 80, 170, 0.15),
+    0 30px 60px -20px rgba(170, 140, 200, 0.5);
+}
+
+.cs-deco {
+  position: absolute;
+  border-radius: 42% 58% 65% 35% / 45% 45% 55% 55%;
+  box-shadow:
+    inset 6px 6px 12px rgba(255, 255, 255, 0.7),
+    inset -6px -6px 12px rgba(120, 80, 170, 0.2);
+}
+
+.cs-deco-1 {
+  width: 140px;
+  height: 140px;
+  left: -30px;
+  top: -30px;
+  background: #fff1b8;
+}
+
+.cs-deco-2 {
+  width: 180px;
+  height: 180px;
+  right: -40px;
+  bottom: -60px;
+  background: #c8f0de;
 }
