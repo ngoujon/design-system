@@ -1,0 +1,83 @@
+.fc-root {
+  background: #ffffff;
+  color: #0a2540;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+.fc-border-b {
+  border-bottom: 1px solid #e6ebf1;
+}
+
+.fc-border-t {
+  border-top: 1px solid #e6ebf1;
+}
+
+.fc-logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #0a2540;
+}
+
+.fc-link {
+  color: #425466;
+}
+
+.fc-link:hover {
+  color: #0a2540;
+}
+
+.fc-btn {
+  border-radius: 8px;
+  padding: 0.55rem 1.1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.fc-btn-primary {
+  background: #635bff;
+  color: #fff;
+}
+
+.fc-btn-primary:hover {
+  background: #4f46e5;
+}
+
+.fc-btn-ghost {
+  background: transparent;
+  color: #0a2540;
+  border: 1px solid #e6ebf1;
+}
+
+.fc-btn-ghost:hover {
+  background: #f7fafc;
+}
+
+.fc-chip {
+  display: inline-flex;
+  background: #eef0ff;
+  color: #635bff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+}
+
+.fc-panel {
+  border-radius: 16px;
+  background: linear-gradient(160deg, #f7fafc, #eef0ff);
+  border: 1px solid #e6ebf1;
+  box-shadow: 0 20px 40px rgba(10, 37, 64, 0.06);
+}
+
+.fc-card {
+  border: 1px solid #e6ebf1;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(10, 37, 64, 0.04);
+}
+
+.fc-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #635bff, #8b85ff);
+}

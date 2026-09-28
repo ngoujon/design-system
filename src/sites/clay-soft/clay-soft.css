@@ -1,0 +1,71 @@
+.cs-root {
+  background: linear-gradient(180deg, #fbeff5 0%, #eef1fb 100%);
+  font-family: "Nunito", "Inter", system-ui, sans-serif;
+}
+
+.cs-logo {
+  font-weight: 800;
+  font-size: 1.3rem;
+  color: #3d3145;
+}
+
+.cs-link {
+  color: #6b5b73;
+}
+
+.cs-link:hover {
+  color: #3d3145;
+}
+
+.cs-btn {
+  border-radius: 999px;
+  padding: 0.65rem 1.4rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  transition: transform 0.15s ease;
+}
+
+.cs-btn:hover {
+  transform: translateY(-2px);
+}
+
+.cs-btn-dark {
+  background: #3d3145;
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(61, 49, 69, 0.25);
+}
+
+.cs-btn-primary {
+  background: #ffb4c6;
+  color: #3d3145;
+  box-shadow: 0 8px 20px rgba(255, 180, 198, 0.6);
+}
+
+.cs-btn-ghost {
+  background: #ffffff;
+  color: #3d3145;
+  box-shadow: 0 6px 16px rgba(61, 49, 69, 0.08);
+}
+
+.cs-blob-frame {
+  background: linear-gradient(135deg, #ffd6e6, #d6e0ff);
+  border-radius: 42% 58% 65% 35% / 45% 45% 55% 55%;
+  box-shadow:
+    inset 0 8px 24px rgba(255, 255, 255, 0.6),
+    0 20px 50px rgba(150, 130, 200, 0.25);
+}
+
+.cs-card {
+  background: #ffffff;
+  border-radius: 28px;
+  box-shadow: 0 10px 30px rgba(150, 130, 200, 0.15);
+}
+
+.cs-card-accent {
+  background: linear-gradient(135deg, #fff5f8, #f2f0ff);
+}
+
+.cs-icon {
+  background: linear-gradient(135deg, #ffe1ea, #e3e6ff);
+  border-radius: 40% 60% 55% 45% / 50% 40% 60% 50%;
+}

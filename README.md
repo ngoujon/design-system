@@ -6,10 +6,10 @@ affiche un faux site complet construit avec ce design system.
 
 - Sidebar rétractable (bouton en haut de la sidebar, ou bouton flottant
   quand elle est masquée)
-- 3 design systems de démo pour l'instant :
-  - **Aurora Glass** — glassmorphism, dégradés lumineux
-  - **Neo Brutal** — neubrutalisme, bordures franches, ombres portées dures
-  - **Quiet Editorial** — minimalisme éditorial, typographie serif
+- 20 design systems de démo, chacun avec un style visuel et un objectif de
+  site différents (SaaS, boutique, promo, audio, dashboard, portfolio,
+  gaming, immobilier, etc.) — voir `src/data/designSystems.ts` pour la
+  liste complète avec leur catégorie.
 
 ## Développement local
 

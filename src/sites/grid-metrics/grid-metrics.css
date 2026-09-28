@@ -1,0 +1,80 @@
+.gm-root {
+  background: #0b0e14;
+  color: #e6e9ef;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+.gm-border-b {
+  border-bottom: 1px solid rgba(230, 233, 239, 0.08);
+}
+
+.gm-border-t {
+  border-top: 1px solid rgba(230, 233, 239, 0.08);
+}
+
+.gm-logo {
+  font-weight: 700;
+  font-family: ui-monospace, monospace;
+}
+
+.gm-link {
+  color: rgba(230, 233, 239, 0.55);
+}
+
+.gm-link:hover {
+  color: #ffffff;
+}
+
+.gm-btn {
+  background: #3b82f6;
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+}
+
+.gm-btn:hover {
+  background: #60a5fa;
+}
+
+.gm-bg-grid {
+  background: rgba(230, 233, 239, 0.08);
+}
+
+.gm-panel {
+  background: #0f131b;
+}
+
+.gm-up {
+  color: #4ade80;
+}
+
+.gm-down {
+  color: #f87171;
+}
+
+.gm-bar {
+  background: linear-gradient(180deg, #3b82f6, #1d4ed8);
+  border-radius: 2px 2px 0 0;
+}
+
+.gm-row-border {
+  border-top: 1px solid rgba(230, 233, 239, 0.06);
+}
+
+.gm-badge {
+  font-size: 0.7rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+}
+
+.gm-badge-ok {
+  background: rgba(74, 222, 128, 0.15);
+  color: #4ade80;
+}
+
+.gm-badge-pending {
+  background: rgba(250, 204, 21, 0.15);
+  color: #facc15;
+}

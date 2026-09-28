@@ -1,0 +1,85 @@
+.bp-root {
+  position: relative;
+  background: #fff9f0;
+  font-family: "Baloo 2", "Nunito", sans-serif;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.bp-blob {
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(0px);
+  z-index: -1;
+}
+
+.bp-blob-1 {
+  width: 280px;
+  height: 280px;
+  background: #ffd166;
+  top: -60px;
+  right: -60px;
+  border-radius: 40% 60% 60% 40% / 50% 40% 60% 50%;
+}
+
+.bp-blob-2 {
+  width: 220px;
+  height: 220px;
+  background: #a0e7e5;
+  bottom: 0;
+  left: -60px;
+  border-radius: 55% 45% 45% 55% / 45% 55% 45% 55%;
+}
+
+.bp-logo {
+  font-weight: 800;
+  font-size: 1.4rem;
+  color: #2b2140;
+}
+
+.bp-link {
+  color: #5c5470;
+}
+
+.bp-link:hover {
+  color: #2b2140;
+}
+
+.bp-btn {
+  border-radius: 999px;
+  padding: 0.6rem 1.3rem;
+  font-size: 0.85rem;
+  font-weight: 800;
+  background: #2b2140;
+  color: #fff9f0;
+  box-shadow: 0 6px 0 #1a1428;
+  transition: transform 0.1s ease;
+}
+
+.bp-btn:hover {
+  transform: translateY(2px);
+  box-shadow: 0 4px 0 #1a1428;
+}
+
+.bp-btn-primary {
+  background: #ff6b6b;
+  box-shadow: 0 6px 0 #d94a4a;
+}
+
+.bp-phone-frame {
+  background: linear-gradient(160deg, #ffd166, #ff8fab);
+  border-radius: 42px;
+  box-shadow: 0 20px 50px rgba(255, 140, 140, 0.35);
+  border: 6px solid #2b2140;
+}
+
+.bp-card {
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 10px 0 rgba(43, 33, 64, 0.08);
+}
+
+.bp-icon {
+  background: #fff2cc;
+  border-radius: 45% 55% 50% 50% / 55% 45% 55% 45%;
+}

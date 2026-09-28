@@ -1,0 +1,57 @@
+.sa-root {
+  background: #ffffff;
+  color: #111111;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.sa-border-b {
+  border-bottom: 1px solid #111111;
+}
+
+.sa-border-t {
+  border-top: 1px solid #111111;
+}
+
+.sa-border-r {
+  border-right: 1px solid #111111;
+}
+
+.sa-logo {
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.sa-link {
+  color: #111111;
+}
+
+.sa-link:hover {
+  color: #cc3333;
+}
+
+.sa-index {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #cc3333;
+  line-height: 1;
+}
+
+.sa-index-sm {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #cc3333;
+  width: 2rem;
+}
+
+.sa-thumb {
+  width: 64px;
+  height: 64px;
+  background: repeating-linear-gradient(
+    45deg,
+    #111111,
+    #111111 4px,
+    #ffffff 4px,
+    #ffffff 8px
+  );
+  flex-shrink: 0;
+}

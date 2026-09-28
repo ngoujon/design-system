@@ -1,0 +1,93 @@
+.wc-root {
+  background: #17151f;
+  color: #f2f0f7;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+.wc-border-b {
+  border-bottom: 1px solid rgba(242, 240, 247, 0.08);
+}
+
+.wc-border-t {
+  border-top: 1px solid rgba(242, 240, 247, 0.08);
+}
+
+.wc-logo {
+  font-weight: 700;
+}
+
+.wc-link {
+  color: rgba(242, 240, 247, 0.6);
+}
+
+.wc-link:hover {
+  color: #fff;
+}
+
+.wc-btn {
+  background: #8b5cf6;
+  color: #fff;
+  padding: 0.55rem 1.2rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.wc-btn:hover {
+  background: #a78bfa;
+}
+
+.wc-accent {
+  color: #f97362;
+}
+
+.wc-eyebrow {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: rgba(242, 240, 247, 0.4);
+}
+
+.wc-play {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #8b5cf6, #f97362);
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.wc-play-sm {
+  width: 32px;
+  height: 32px;
+  font-size: 0.7rem;
+}
+
+.wc-wave {
+  width: 4px;
+  background: linear-gradient(180deg, #8b5cf6, #f97362);
+  border-radius: 2px;
+}
+
+.wc-episode {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.9rem 1.2rem;
+  background: rgba(242, 240, 247, 0.04);
+  border-radius: 12px;
+}
+
+.wc-num {
+  font-family: ui-monospace, monospace;
+  color: #f97362;
+  font-size: 0.85rem;
+  width: 3rem;
+}
+
+.wc-band {
+  background: rgba(139, 92, 246, 0.1);
+}

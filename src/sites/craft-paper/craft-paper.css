@@ -1,0 +1,87 @@
+.cp-root {
+  background: #f3e9d8;
+  background-image:
+    radial-gradient(rgba(140, 110, 80, 0.05) 1px, transparent 1px);
+  background-size: 4px 4px;
+  color: #4a3728;
+  font-family: "Georgia", serif;
+}
+
+.cp-border-b {
+  border-bottom: 1px solid rgba(74, 55, 40, 0.15);
+}
+
+.cp-border-t {
+  border-top: 1px solid rgba(74, 55, 40, 0.15);
+}
+
+.cp-logo {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.cp-hand {
+  font-family: "Bradley Hand", "Segoe Print", "Comic Sans MS", cursive;
+  font-weight: 700;
+  color: #4a3728;
+}
+
+.cp-link {
+  color: #5c4a3a;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.cp-link:hover {
+  color: #4a3728;
+}
+
+.cp-btn {
+  border: 2px solid #4a3728;
+  padding: 0.6rem 1.3rem;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 999px;
+}
+
+.cp-btn-primary {
+  background: #b5652f;
+  color: #f3e9d8;
+  border-color: #b5652f;
+}
+
+.cp-btn-primary:hover {
+  background: #964f22;
+}
+
+.cp-stamp {
+  border: 2px dashed #b5652f;
+  color: #b5652f;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  transform: rotate(-2deg);
+}
+
+.cp-card {
+  background: #fbf4e8;
+  border: 1px solid rgba(74, 55, 40, 0.15);
+  border-radius: 12px;
+}
+
+.cp-photo {
+  aspect-ratio: 4 / 3;
+  background: linear-gradient(160deg, #e6c9a3, #b5652f);
+  border-radius: 8px;
+}
+
+.cp-band {
+  background: #4a3728;
+  color: #f3e9d8;
+}
+
+.cp-band .cp-hand {
+  color: #f3e9d8;
+}

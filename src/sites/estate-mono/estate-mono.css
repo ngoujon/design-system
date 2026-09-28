@@ -1,0 +1,68 @@
+.em-root {
+  background: #fafafa;
+  color: #1a1a1a;
+  font-family: "Georgia", serif;
+}
+
+.em-border-b {
+  border-bottom: 1px solid rgba(26, 26, 26, 0.1);
+}
+
+.em-border-t {
+  border-top: 1px solid rgba(26, 26, 26, 0.1);
+}
+
+.em-logo {
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  font-size: 1.1rem;
+}
+
+.em-link {
+  color: #1a1a1a;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.em-link:hover {
+  color: #666;
+}
+
+.em-btn {
+  border: 1px solid #1a1a1a;
+  padding: 0.6rem 1.3rem;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.em-btn:hover {
+  background: #1a1a1a;
+  color: #fafafa;
+}
+
+.em-eyebrow {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #666;
+}
+
+.em-hero {
+  height: 60vh;
+  min-height: 420px;
+  background: linear-gradient(180deg, #d9d9d9 0%, #bfbfbf 60%, #a6a6a6 100%);
+  filter: grayscale(1);
+}
+
+.em-photo {
+  aspect-ratio: 4 / 3;
+  background: linear-gradient(160deg, #e0e0e0, #b8b8b8);
+  filter: grayscale(0.4);
+}
+
+.em-band {
+  background: #1a1a1a;
+  color: #fafafa;
+}

@@ -1,0 +1,83 @@
+.hc-root {
+  background: #05060a;
+  color: #e8faff;
+  font-family: "Orbitron", "Inter", sans-serif;
+}
+
+.hc-border-b {
+  border-bottom: 1px solid rgba(0, 240, 255, 0.2);
+}
+
+.hc-border-t {
+  border-top: 1px solid rgba(0, 240, 255, 0.2);
+}
+
+.hc-logo {
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  color: #00f0ff;
+}
+
+.hc-link {
+  color: rgba(232, 250, 255, 0.6);
+  font-family: "Inter", sans-serif;
+}
+
+.hc-link:hover {
+  color: #00f0ff;
+}
+
+.hc-tag {
+  font-family: ui-monospace, monospace;
+  color: #ff2fc2;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+}
+
+.hc-title {
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.hc-hero {
+  background:
+    radial-gradient(50% 60% at 50% 0%, rgba(0, 240, 255, 0.12), transparent 70%);
+}
+
+.hc-btn {
+  clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
+  border: 1px solid rgba(0, 240, 255, 0.5);
+  color: #e8faff;
+  padding: 0.55rem 1.2rem;
+  font-size: 0.75rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.hc-btn:hover {
+  background: rgba(0, 240, 255, 0.1);
+}
+
+.hc-btn-solid {
+  background: linear-gradient(90deg, #00f0ff, #ff2fc2);
+  color: #05060a;
+  border: none;
+}
+
+.hc-card {
+  border: 1px solid rgba(0, 240, 255, 0.2);
+  background: rgba(0, 240, 255, 0.03);
+  clip-path: polygon(0 0, calc(100% - 16px) 0, 100% 16px, 100% 100%, 16px 100%, 0 calc(100% - 16px));
+}
+
+.hc-thumb {
+  aspect-ratio: 16 / 9;
+  background: linear-gradient(135deg, #1a0b2e, #0d2b3a);
+  border-bottom: 1px solid rgba(0, 240, 255, 0.2);
+}
+
+.hc-players {
+  color: #4ade80;
+  font-family: ui-monospace, monospace;
+}

@@ -1,0 +1,69 @@
+.tb-root {
+  background: #f5f1e6;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+.tb-logo {
+  font-weight: 700;
+  color: #2f3b2a;
+}
+
+.tb-link {
+  color: #5a6650;
+}
+
+.tb-link:hover {
+  color: #2f3b2a;
+}
+
+.tb-chip {
+  display: inline-flex;
+  background: #e4ead9;
+  color: #3f5a34;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+}
+
+.tb-btn {
+  border-radius: 999px;
+  padding: 0.65rem 1.4rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  background: #ffffff;
+  color: #2f3b2a;
+  border: 1px solid rgba(47, 59, 42, 0.15);
+}
+
+.tb-btn-primary {
+  background: #4a6741;
+  color: #f5f1e6;
+  border: none;
+}
+
+.tb-btn-primary:hover {
+  background: #3f5a34;
+}
+
+.tb-organic-frame {
+  background: radial-gradient(circle at 30% 30%, #cfe0bf, #a9c491 70%);
+  border-radius: 50% 45% 55% 50% / 55% 50% 50% 45%;
+}
+
+.tb-card {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(47, 59, 42, 0.08);
+}
+
+.tb-leaf {
+  width: 36px;
+  height: 36px;
+  background: linear-gradient(135deg, #a9c491, #4a6741);
+  border-radius: 0% 100% 0% 100%;
+}
+
+.tb-band {
+  background: #4a6741;
+}

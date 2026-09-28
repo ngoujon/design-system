@@ -1,0 +1,138 @@
+.nt-root {
+  position: relative;
+  background: linear-gradient(180deg, #1a0b2e 0%, #2d0f4c 45%, #4a1259 100%);
+  color: #fff;
+  font-family: "Poppins", "Inter", sans-serif;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.nt-sun {
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  width: 260px;
+  height: 260px;
+  transform: translateX(-50%);
+  border-radius: 999px;
+  background: linear-gradient(180deg, #ff9ecb, #ff5fa2 40%, #ff2f7e 100%);
+  box-shadow: 0 0 120px rgba(255, 95, 162, 0.5);
+  z-index: 0;
+}
+
+.nt-grid-floor {
+  position: absolute;
+  bottom: 0;
+  left: -20%;
+  right: -20%;
+  height: 45%;
+  background-image:
+    linear-gradient(rgba(0, 240, 255, 0.35) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 240, 255, 0.35) 1px, transparent 1px);
+  background-size: 60px 60px;
+  transform: perspective(300px) rotateX(60deg);
+  transform-origin: bottom;
+  z-index: 0;
+}
+
+.nt-logo {
+  font-weight: 800;
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+  background: linear-gradient(90deg, #00f0ff, #ff5fa2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.nt-link {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.nt-link:hover {
+  color: #00f0ff;
+}
+
+.nt-title {
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  background: linear-gradient(90deg, #00f0ff, #ff5fa2, #ffe066);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 60px rgba(255, 95, 162, 0.4);
+}
+
+.nt-btn {
+  border: 1px solid rgba(0, 240, 255, 0.5);
+  color: #fff;
+  padding: 0.6rem 1.3rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.nt-btn:hover {
+  background: rgba(0, 240, 255, 0.1);
+}
+
+.nt-btn-solid {
+  background: linear-gradient(90deg, #00f0ff, #ff5fa2);
+  border: none;
+  color: #1a0b2e;
+  font-weight: 700;
+}
+
+.nt-player {
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+}
+
+.nt-cover {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #ff5fa2, #00f0ff);
+}
+
+.nt-wave {
+  width: 4px;
+  flex: 1;
+  background: linear-gradient(180deg, #00f0ff, #ff5fa2);
+  border-radius: 2px;
+}
+
+.nt-eyebrow {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.nt-tracklist {
+  border-radius: 16px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.nt-track {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.9rem 1.2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.nt-track:last-child {
+  border-bottom: none;
+}
+
+.nt-num {
+  color: #00f0ff;
+  font-weight: 700;
+  font-size: 0.85rem;
+  width: 1.5rem;
+}

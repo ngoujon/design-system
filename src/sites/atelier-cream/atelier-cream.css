@@ -1,0 +1,69 @@
+.ac-root {
+  background: #fbf7ef;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+.ac-logo {
+  font-weight: 600;
+  color: #2e2a25;
+}
+
+.ac-link {
+  color: #8a8072;
+}
+
+.ac-link:hover {
+  color: #2e2a25;
+}
+
+.ac-status {
+  font-size: 0.75rem;
+  color: #7a8a6a;
+  background: #eef1e6;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+}
+
+.ac-eyebrow {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #8a8072;
+}
+
+.ac-btn {
+  border-radius: 999px;
+  padding: 0.65rem 1.4rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: 1px solid #e0d8c8;
+  color: #2e2a25;
+}
+
+.ac-btn:hover {
+  background: #f2ece0;
+}
+
+.ac-btn-primary {
+  background: #2e2a25;
+  color: #fbf7ef;
+  border: none;
+}
+
+.ac-btn-primary:hover {
+  background: #4a453d;
+}
+
+.ac-divide > div {
+  border-top: 1px solid #e0d8c8;
+}
+
+.ac-divide > div:first-child {
+  border-top: none;
+}
+
+.ac-card {
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #e0d8c8;
+}

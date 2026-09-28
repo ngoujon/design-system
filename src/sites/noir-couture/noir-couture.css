@@ -1,0 +1,78 @@
+.nc-root {
+  background: #0d0d0d;
+  color: #f2ede6;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.nc-logo {
+  font-family: "Georgia", serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+}
+
+.nc-serif {
+  font-family: "Georgia", "Playfair Display", serif;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.nc-link {
+  color: rgba(242, 237, 230, 0.65);
+  text-decoration: none;
+}
+
+.nc-link:hover {
+  color: #d4af37;
+}
+
+.nc-icon-btn {
+  color: rgba(242, 237, 230, 0.8);
+}
+
+.nc-eyebrow {
+  font-size: 0.7rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #d4af37;
+}
+
+.nc-hero {
+  background: radial-gradient(60% 60% at 50% 30%, rgba(212, 175, 55, 0.08), transparent 70%);
+  border-bottom: 1px solid rgba(242, 237, 230, 0.08);
+}
+
+.nc-btn {
+  border: 1px solid #d4af37;
+  color: #d4af37;
+  padding: 0.85rem 2rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  transition: all 0.2s ease;
+}
+
+.nc-btn:hover {
+  background: #d4af37;
+  color: #0d0d0d;
+}
+
+.nc-product-frame {
+  aspect-ratio: 3 / 4;
+  background: linear-gradient(160deg, #1c1c1c, #0d0d0d);
+  border: 1px solid rgba(242, 237, 230, 0.1);
+  transition: border-color 0.2s ease;
+}
+
+.group:hover .nc-product-frame {
+  border-color: #d4af37;
+}
+
+.nc-price {
+  color: rgba(242, 237, 230, 0.5);
+}
+
+.nc-band {
+  background: #111111;
+  border-top: 1px solid rgba(242, 237, 230, 0.08);
+  border-bottom: 1px solid rgba(242, 237, 230, 0.08);
+}
