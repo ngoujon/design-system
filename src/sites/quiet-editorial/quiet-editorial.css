@@ -1,0 +1,76 @@
+.qe-root {
+  background: #f2efe9;
+  color: #1c1c1c;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+.qe-container {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.qe-border-t {
+  border-top: 1px solid rgba(28, 28, 28, 0.15);
+}
+
+.qe-border-b {
+  border-bottom: 1px solid rgba(28, 28, 28, 0.3);
+}
+
+.qe-serif {
+  font-family: "Georgia", "Iowan Old Style", "Times New Roman", serif;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.qe-eyebrow {
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(28, 28, 28, 0.5);
+}
+
+.qe-lede {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: rgba(28, 28, 28, 0.65);
+}
+
+.qe-link {
+  color: #1c1c1c;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.qe-link:hover {
+  border-color: rgba(28, 28, 28, 0.6);
+}
+
+.qe-frame {
+  aspect-ratio: 4 / 5;
+  background: repeating-linear-gradient(
+    135deg,
+    rgba(28, 28, 28, 0.06),
+    rgba(28, 28, 28, 0.06) 1px,
+    transparent 1px,
+    transparent 10px
+  );
+  border: 1px solid rgba(28, 28, 28, 0.15);
+}
+
+.qe-num {
+  font-family: "Georgia", serif;
+  font-size: 1.5rem;
+  color: rgba(28, 28, 28, 0.3);
+}
+
+.qe-divide > article {
+  border-top: 1px solid rgba(28, 28, 28, 0.12);
+}
+
+.qe-divide > article:first-child {
+  border-top: none;
+}

@@ -1,0 +1,93 @@
+.nb-root {
+  background: #f5f3ee;
+  color: #111111;
+  font-family: "Archivo Black", "Helvetica Neue", Arial, sans-serif;
+}
+
+.nb-root h1,
+.nb-root h2,
+.nb-root h3 {
+  font-family: "Archivo Black", "Helvetica Neue", Arial, sans-serif;
+}
+
+.nb-border-b {
+  border-bottom: 4px solid #111111;
+}
+
+.nb-border-l {
+  border-left: 4px solid #111111;
+}
+
+.nb-logo {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.nb-navlink {
+  position: relative;
+}
+
+.nb-navlink:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+
+.nb-chip {
+  border: 3px solid #111111;
+  background: #ffffff;
+  padding: 0.35rem 0.9rem;
+  font-size: 0.75rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.nb-highlight {
+  background: #6ee7b7;
+  padding: 0 0.15em;
+}
+
+.nb-btn {
+  border: 3px solid #111111;
+  padding: 0.75rem 1.5rem;
+  font-weight: 900;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  box-shadow: 5px 5px 0 #111111;
+  transition:
+    transform 0.12s ease,
+    box-shadow 0.12s ease;
+}
+
+.nb-btn:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 3px 3px 0 #111111;
+}
+
+.nb-btn:active {
+  transform: translate(5px, 5px);
+  box-shadow: 0 0 0 #111111;
+}
+
+.nb-btn-yellow {
+  background: #fff200;
+  color: #111111;
+}
+
+.nb-btn-black {
+  background: #111111;
+  color: #ffffff;
+}
+
+.nb-btn-white {
+  background: #ffffff;
+  color: #111111;
+}
+
+.nb-card {
+  border: 3px solid #111111;
+  box-shadow: 6px 6px 0 #111111;
+}
+
+.nb-bar {
+  border: 3px solid #111111;
+}
