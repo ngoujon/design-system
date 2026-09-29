@@ -1,29 +1,29 @@
 # Design Systems Gallery
 
-App web pour parcourir des inspirations de design systems (2026) : une
-sidebar à gauche liste les design systems disponibles, la zone principale
-affiche un faux site complet construit avec ce design system.
+A web app for browsing design system inspirations (2026): a sidebar on the
+left lists the available design systems, and the main area displays a full
+fake website built with the selected design system.
 
-- Sidebar rétractable (bouton en haut de la sidebar, ou bouton flottant
-  quand elle est masquée)
-- 20 design systems de démo, chacun avec un style visuel et un objectif de
-  site différents (SaaS, boutique, promo, audio, dashboard, portfolio,
-  gaming, immobilier, etc.) — voir `src/data/designSystems.ts` pour la
-  liste complète avec leur catégorie.
+- Collapsible sidebar (toggle button at the top of the sidebar, or a
+  floating button when it is hidden)
+- 20 demo design systems, each with its own visual style and site purpose
+  (SaaS, shop, promo, audio, dashboard, portfolio, gaming, real estate,
+  etc.) — see `src/data/designSystems.ts` for the full list with their
+  categories.
 
-## Développement local
+## Local development
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Ajouter un design system
+## Adding a design system
 
-1. Créer un dossier dans `src/sites/<id>/` avec le composant du faux site
-   et son CSS dédié.
-2. L'ajouter dans `src/data/designSystems.ts` (id, nom, tagline, couleurs,
-   composant).
+1. Create a folder in `src/sites/<id>/` containing the fake site component
+   and its dedicated CSS.
+2. Add it to `src/data/designSystems.ts` (id, name, tagline, colors,
+   component).
 
-La route `/site/<id>` et l'entrée de sidebar sont générées automatiquement
-à partir de cette liste.
+The `/site/<id>` route and the sidebar entry are generated automatically
+from this list.
