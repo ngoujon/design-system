@@ -11,6 +11,18 @@ fake website built with the selected design system.
   etc.) — see `src/data/designSystems.ts` for the full list with their
   categories.
 
+## Screenshots
+
+*Every site in the gallery is fictional: brands, figures and people are made up.*
+
+| Aurora Glass (SaaS) | Neo Brutal (promo) |
+| --- | --- |
+| ![Aurora Glass](docs/screenshots/aurora-glass.jpg) | ![Neo Brutal](docs/screenshots/neo-brutal.jpg) |
+
+| Grid Metrics (fintech dashboard) | HUD Cyber (gaming) |
+| --- | --- |
+| ![Grid Metrics](docs/screenshots/grid-metrics.jpg) | ![HUD Cyber](docs/screenshots/hud-cyber.jpg) |
+
 ## Local development
 
 ```bash
